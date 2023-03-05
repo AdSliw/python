@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def fizz_buzz(num) -> None:
     '''
     Exercise 01, file pp_01.py
