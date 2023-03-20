@@ -1,4 +1,6 @@
-"# ITCSP Course" 
+"# ITCSP Course - sem1"
+"# Python programming - sem2"
+
 "# uamPython" 
 
 GIT COMMANDS:
