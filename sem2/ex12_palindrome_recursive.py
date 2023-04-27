@@ -55,7 +55,7 @@ def is_palindrome(text: str) -> bool:
         return is_palindrome(text[1:-1])
     else:
         return False
-
+    
 
 def print_palindrome_check(text: str) -> None:
     '''

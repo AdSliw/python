@@ -14,7 +14,7 @@ Expected results
 n! = 1 * 2 * 3 * .... * n
 
 '''
-
+import time
 
 def factorial(n: int) -> int:
    '''
@@ -34,7 +34,15 @@ def factorial(n: int) -> int:
    else:
       for i in range(1,n + 1):
          outcome = outcome*i
-         print("The factorial of",i,"is",outcome)
+   return outcome
+
+tic_external = time.perf_counter()
 
 for i in range(33):
-   print(factorial(i))
+    tic = time.perf_counter()
+    print(str(i + 1) +'. ',factorial(i))
+    toc = time.perf_counter()
+    print(f"Completed in {toc - tic:0.4f} seconds\n")
+
+toc_external = time.perf_counter()
+print(f"All completed in {toc_external - tic_external:0.4f} seconds\n")
